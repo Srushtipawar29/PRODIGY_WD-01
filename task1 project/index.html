@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Company</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c07a7a;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff6347;
+}
+
+section {
+    padding: 60px 20px;
+    margin-top: 60px;
+}
+
+#home {
+    background: url('watch-home.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    height: 100vh;
+}
+
+#about, #products, #contact {
+    background: #f4f4f4;
+}
+
+#about h2, #products h2, #contact h2 {
+    margin-top: 0;
+}
+
+#about p, #products p, #contact p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+</style>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="logo">Watch Co.</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    
+
+    <section id="home">
+        <h1>Welcome to Watch Co.</h1>
+        <p>Discover our range of exquisite timepieces.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Watch Co. has been crafting beautiful watches since 1920.</p>
+    </section>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <p>Explore our collection of luxury watches.</p>
+        <li>citizen</li>
+        <li>titan</li>
+        <li>Fasttrack</li>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us for more information.</p>
+        <p>Follow for more </p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
